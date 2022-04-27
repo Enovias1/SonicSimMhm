@@ -1,11 +1,7 @@
 local ESP = false
 
-local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/notification_gui_library.lua", true))()
 local UserInputService = game:GetService("UserInputService")
 wait = task.wait
-
-local noti = Notification.new("Success", "Esp", "Loaded H to toggle.")
-noti:deleteTimeout(5)
 
 UserInputService.InputBegan:connect(function(key,typing)
 if typing then return end
